@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+    <header class="fixed-header">
+        <h1>My Portfolio</h1>
+    </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Why I Love Cakes</a></li>
+            <li><a href="#projects">Equipment Needed</a></li>
+			 <li><a href="#skills">Different types of cakes</a></li>
+			 <li><a href="#contact">My Favorite Cake</a></li>
+        </ul>
+    </nav>
+
       <button id="toggle-theme">Toggle Dark/Light Mode</button>
     </nav>
   </header>
@@ -22,7 +26,7 @@
   <main>
     <section id="home">
       <h1>Welcome to My Portfolio</h1>
-      <p>I'm [Your Name], a passionate web developer.</p>
+      <p>I'm Lailah Smith, a passionate web developer.</p>
     </section>
   </main>
 
@@ -39,11 +43,6 @@
   <main>
     <section id="projects">
       <h2>My Projects</h2>
-      <div class="filters">
-        <button onclick="filterProjects('all')">All</button>
-        <button onclick="filterProjects('web')">Web</button>
-        <button onclick="filterProjects('app')">App</button>
-      </div>
 
       <div class="project-list">
         <div class="project-card web">
