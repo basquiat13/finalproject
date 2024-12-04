@@ -1,34 +1,97 @@
-:root {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 30px;
+	 background-color: lavender;
+	 
+}
+
+.fixed-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    background-color: rgb(45, 52, 54);
+    padding: 0.5rem;
+	margin-top:70px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #FFB6C1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+#container {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 60px; 
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.float-img {
+    float: right;
+    margin-left: 20px;
+}
+
+.link {
+    font-weight: bold;
+    color: red;
+}
+
+.link :visited {
+    color: green;
+    font-style: italic;
+}
+
+.link :hover {
+    text-decoration: underline;
+    color: blue;
+}.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #FFB6C1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}:root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --dark-bg: #333;
   --light-bg: #fff;
   --font-family: 'Arial', sans-serif;
-}
-
-body {
-  font-family: var(--font-family);
-  background-color: var(--light-bg);
-  color: var(--dark-bg);
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
 }
 
 button {
