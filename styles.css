@@ -354,10 +354,7 @@ body.dark-mode .footer {
   color: var(--dark-text-color);
 }
 
-body.dark-mode {
-  background-color: var(--dark-bg);
-  color: var(--light-bg);
-}
+
 
 @media (max-width: 768px) {
   nav ul {
