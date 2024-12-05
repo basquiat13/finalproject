@@ -67,6 +67,25 @@ searchInput.addEventListener("input", function () {
         if (!valid) {
             event.preventDefault();
         }
+        document.addEventListener("DOMContentLoaded", function () {
+    // Select all links in the navigation menu
+    const links = document.querySelectorAll('nav a');
+
+    // Loop through each link
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link click behavior
+
+            // Get the target section from the href attribute of the clicked link
+            const targetId = link.getAttribute("href").slice(1);  // Remove the "#" from href
+            const targetSection = document.getElementById(targetId);
+
+            // Smoothly scroll to the target section
+            targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"  // Align the section to the top of the page
+            });
+        });
     });
 });
 
