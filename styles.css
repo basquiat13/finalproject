@@ -31,14 +31,14 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
-
 nav a {
-  color: white;
-  text-decoration: none;
+    color: #FFB6C1;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-  color: #e74c3c;
+    color: #e74c3c;
 }
 
 button {
