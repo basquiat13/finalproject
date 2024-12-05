@@ -85,6 +85,42 @@ searchInput.addEventListener("input", function () {
                 behavior: "smooth",
                 block: "start"  // Align the section to the top of the page
             });
+            document.addEventListener('DOMContentLoaded', function () {
+    // Get all project thumbnail images and modal elements
+    const projectThumbnails = document.querySelectorAll('.project-thumbnail');
+    const modal = document.getElementById('portfolio-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalDescription = document.getElementById('modal-description');
+    const closeModal = document.getElementById('close-modal');
+
+    // Add event listener to each thumbnail to open the modal with corresponding content
+    projectThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function () {
+            // Get the full-size image and description (replace with your real content)
+            const fullSizeImage = thumbnail.src.replace('thumbnail', 'fullsize'); // Change this logic as per your setup
+            const description = thumbnail.nextElementSibling.innerText;  // Get the description from the next sibling paragraph
+
+            // Set the content of the modal
+            modalImg.src = fullSizeImage;
+            modalDescription.textContent = description;
+
+            // Display the modal
+            modal.style.display = 'block';
+        });
+    });
+
+    // Close the modal when the close button is clicked
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    // Close the modal if the user clicks anywhere outside the modal content
+    window.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
         });
     });
 });
