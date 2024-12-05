@@ -103,6 +103,16 @@ input:valid, textarea:valid {
 .project-card.hidden {
     display: none;
 }
+.project-thumbnail {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-thumbnail:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
