@@ -40,7 +40,13 @@ nav a {
 nav a:hover {
     color: #e74c3c;
 }
-
+.home-img {
+    width: 50%; /* Adjust the width to 50% or change to any value you prefer */
+    max-width: 500px; /* Ensures the image doesn't get too large */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 20px auto; /* Centers the image horizontally */
+}
 button {
   padding: 10px 20px;
   background-color: var(--primary-color);
