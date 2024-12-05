@@ -57,6 +57,25 @@ section {
   padding: 20px;
   margin: 20px;
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;  /* Initially hidden */
+    margin-top: 5px;
+}
+
+input:invalid, textarea:invalid {
+    border: 1px solid red;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+    outline: 2px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid green;
+}
+
 
 #project-search {
     padding: 10px;
