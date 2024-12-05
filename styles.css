@@ -1,9 +1,9 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding-top: 30px;
-	 background-color: lavender;
-	 
+    background-color: lavender;
 }
 
 .fixed-header {
@@ -13,12 +13,13 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 }
 
 nav {
     background-color: rgb(45, 52, 54);
     padding: 0.5rem;
-	margin-top:70px;
+    margin-top: 70px;
 }
 
 nav ul {
@@ -48,25 +49,28 @@ nav a:hover {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     padding: 20px;
-    margin-top: 60px; 
+    margin-top: 60px;
 }
-table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #333;
-            color: #fff;
-        }
 
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
 
 .highlight {
     color: #ff0000;
@@ -83,27 +87,34 @@ table {
     color: red;
 }
 
-.link :visited {
+.link:visited {
     color: green;
     font-style: italic;
 }
 
-.link :hover {
+.link:hover {
     text-decoration: underline;
     color: blue;
-}.container {
+}
+
+/* Container for layout structure */
+.container {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full height of the viewport */
 }
 
+/* Footer */
 .footer {
     margin-top: auto; /* Pushes the footer to the bottom */
     background-color: #FFB6C1;
     color: white;
     text-align: center;
     padding: 10px 0;
-}:root {
+}
+
+/* Dark/Light Mode */
+:root {
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --dark-bg: #333;
@@ -111,6 +122,12 @@ table {
   --font-family: 'Arial', sans-serif;
 }
 
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+}
+
+/* Button styles */
 button {
   padding: 10px 20px;
   background-color: var(--primary-color);
@@ -123,6 +140,7 @@ button:hover {
   background-color: var(--secondary-color);
 }
 
+/* Section styles */
 section {
   padding: 20px;
   margin: 20px;
@@ -155,12 +173,6 @@ section {
 
 .skills-visualization .skill[data-skill="80"] {
   width: 80%;
-}
-
-/* Dark/Light Mode */
-body.dark-mode {
-  background-color: var(--dark-bg);
-  color: var(--light-bg);
 }
 
 /* Responsive Design */
