@@ -1,7 +1,16 @@
-// Dark Mode Toggle
-document.getElementById("toggle-theme").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+document.getElementById('toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', currentMode);
 });
+
+// Load the saved theme from localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+} else {
+    document.body.classList.remove('dark-mode');
+}
 
 // Portfolio Search Filter
 document.getElementById("project-search").addEventListener("input", (event) => {
