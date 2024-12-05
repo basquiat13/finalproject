@@ -1,143 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="fixed-header">
         <h1>My Portfolio</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
-			 <li><a href="#skills">Skills</a></li>
-			 <li><a href="#contact">Contact me!</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact me!</a></li>
         </ul>
     </nav>
 
-      <button id="toggle-theme">Toggle Dark/Light Mode</button>
-    </nav>
-  </header>
+    <button id="toggle-theme">Toggle Dark/Light Mode</button>
 
-  <main>
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm Lailah Smith, a passionate web developer.</p>
-    </section>
-  </main>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Lailah Smith, a passionate web developer.</p>
+        </section>
 
- 
-<img src="https://sallysbakingaddiction.com/wp-content/uploads/2020/03/fresh-berry-cream-cake-1024x1536.jpg" alt="Fresh Berry Cream Cake"class="float-img">
+        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2020/03/fresh-berry-cream-cake-1024x1536.jpg" alt="Fresh Berry Cream Cake" class="float-img">
+
         <section class="resume">
             <h2>Download My Resume</h2>
             <p>Click the link below to download my resume in PDF format:</p>
-            <a href="https://github.com/basquiat13/basquiat13.github.io/blob/b905c36db05ab08429b319fc191e1b9a8591f616/Copy%20of%20Lailah%20Smith%20Resume.pdf" download>Download Resume</a>
+            <a href="https://github.com/basquiat13/basquiat13.github.io/raw/b905c36db05ab08429b319fc191e1b9a8591f616/Copy%20of%20Lailah%20Smith%20Resume.pdf" download>Download Resume</a>
         </section>
 
+        <section id="projects">
+            <h2>My Projects</h2>
 
-  <script src="script.js"></script>
-</body>
+            <div class="project-list">
+                <div class="project-card web">
+                    <h3>Web Project 1</h3>
+                    <p>Description of Web Project 1.</p>
+                </div>
+                <div class="project-card app">
+                    <h3>App Project 1</h3>
+                    <p>Description of App Project 1.</p>
+                </div>
+                <div class="project-card web">
+                    <h3>Web Project 2</h3>
+                    <p>Description of Web Project 2.</p>
+                </div>
+            </div>
+        </section>
 
-<body>
+        <section id="skills">
+            <h2>My Skills & Technologies</h2>
 
-
-  <main>
-    <section id="projects">
-      <h2>My Projects</h2>
-
-      <div class="project-list">
-        <div class="project-card web">
-          <h3>Web Project 1</h3>
-          <p>Description of Web Project 1.</p>
-        </div>
-        <div class="project-card app">
-          <h3>App Project 1</h3>
-          <p>Description of App Project 1.</p>
-        </div>
-        <div class="project-card web">
-          <h3>Web Project 2</h3>
-          <p>Description of Web Project 2.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
-<body>
-
-  <main>
-    <section id="skills">
-      <h2>My Skills & Technologies</h2>
-      
             <table>
-            <tr>
-                <th colspan="2">Skills</th>
-            </tr>
-            <tr>
-                <td>Programming Languages:</td>
-                <td>JavaScript, Python, Java, Visual Basic, HTML, Snap, and Scratch</td>
-            </tr>
-            <tr>
-                <td>Other Skills</td>
-                <td>Problem Solving, Adaptability, Time management, Communication, Quick learner</td>
-            </tr>
-  </table>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
-<body>
-  <main>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-	      <table>
-            <tr>
-                <th colspan="2">Contact Info</th>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td>lailah.smith@lions.lincoln.edu.com</td>
-            </tr>
-            <tr>
-                <td>Phone:</td>
-                <td>(516) 549-6631</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="separator"></td>
-            </tr>
-            <tr>
-                <th colspan="2">Social Media Links</th>
-            </tr>
-            <tr>
-                <td>LinkedIn:</td>
-                <td><a href="https://www.linkedin.com/in/lailah-smith-92342a2b5" target="_blank">LinkedIn Profile</a></td>
-            </tr>
-            <tr>
-                <td>GitHub:</td>
-                <td><a href="https://github.com/baquiat13" target="_blank">GitHub Profile</a></td>
-            </tr>  
-                
+                <tr>
+                    <th colspan="2">Skills</th>
+                </tr>
+                <tr>
+                    <td>Programming Languages:</td>
+                    <td>JavaScript, Python, Java, Visual Basic, HTML, Snap, and Scratch</td>
+                </tr>
+                <tr>
+                    <td>Other Skills:</td>
+                    <td>Problem Solving, Adaptability, Time management, Communication, Quick learner</td>
+                </tr>
             </table>
-    </section>
-  </main>
-<footer class="footer">
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <table>
+                <tr>
+                    <th colspan="2">Contact Info</th>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>lailah.smith@lions.lincoln.edu.com</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>(516) 549-6631</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="separator"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Social Media Links</th>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td><a href="https://www.linkedin.com/in/lailah-smith-92342a2b5" target="_blank">LinkedIn Profile</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub:</td>
+                    <td><a href="https://github.com/baquiat13" target="_blank">GitHub Profile</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
         <p>&copy; 2024 Lailah Smith</p>
     </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html
+
+</html>
