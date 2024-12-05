@@ -21,8 +21,13 @@ document.querySelectorAll(".project-thumbnail").forEach((thumbnail) => {
     thumbnail.addEventListener("click", (event) => {
         const modal = document.getElementById("portfolio-modal");
         const img = event.target;
+        const description = img.closest(".project-card").getAttribute("data-description");
+
+        // Set modal content
         document.getElementById("modal-img").src = img.src;
-        document.getElementById("modal-description").innerText = img.closest(".project-card").getAttribute("data-description");
+        document.getElementById("modal-description").innerText = description;
+
+        // Display modal
         modal.style.display = "block";
     });
 });
@@ -37,10 +42,12 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     event.preventDefault();
     let isValid = true;
 
+    // Get form elements
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
 
+    // Validate Name
     if (!name.value.trim()) {
         document.getElementById("name-error").style.display = "block";
         isValid = false;
@@ -48,6 +55,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
         document.getElementById("name-error").style.display = "none";
     }
 
+    // Validate Email
     if (!email.value.trim() || !email.validity.valid) {
         document.getElementById("email-error").style.display = "block";
         isValid = false;
@@ -55,6 +63,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
         document.getElementById("email-error").style.display = "none";
     }
 
+    // Validate Message
     if (!message.value.trim()) {
         document.getElementById("message-error").style.display = "block";
         isValid = false;
@@ -62,7 +71,8 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
         document.getElementById("message-error").style.display = "none";
     }
 
+    // If form is valid, show success message
     if (isValid) {
         alert("Message Sent!");
     }
-});"
+});
