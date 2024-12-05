@@ -8,9 +8,10 @@ document.getElementById('toggle-theme').addEventListener('click', () => {
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     document.body.classList.add('dark-mode');
-} else {
+} else if (savedTheme === 'light') {
     document.body.classList.remove('dark-mode');
 }
+
 
 // Portfolio Search Filter
 document.getElementById("project-search").addEventListener("input", (event) => {
