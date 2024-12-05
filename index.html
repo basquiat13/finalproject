@@ -88,12 +88,18 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <form id="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <span id="name-error" class="error-message"></span>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+        <span id="email-error" class="error-message"></span>
+
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <span id="message-error" class="error-message"></span>
+
+        <button type="submit">Send Message</button>
+    </form>
         </section>
     </main>
 
