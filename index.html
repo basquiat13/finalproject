@@ -25,6 +25,7 @@
         <section id="home">
             <h1>Welcome to My Portfolio</h1>
             <p>I'm Lailah Smith, a passionate web developer.</p>
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2020/03/fresh-berry-cream-cake-1024x1536.jpg" alt="Fresh Berry Cream Cake" class="home-img">
 
             <!-- Interactive Timeline for Experience/Education -->
             <div class="timeline">
@@ -39,7 +40,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date">2023 - 2027</div>
                     <div class="timeline-content">
-                        <h3>Lincoln university</h3>
+                        <h3>Lincoln University</h3>
                         <p>Pursuing a Bachelor of Science in Computer Science</p>
                     </div>
                 </div>
@@ -54,25 +55,24 @@
             <input type="text" id="project-search" placeholder="Search Projects..." />
 
             <div class="project-list">
-        <div class="project-card">
-            <h3>Web Project 1</h3>
-            <img src="project1-thumbnail.jpg" alt="Project 1" class="project-thumbnail">
-            <p>Description of Web Project 1.</p>
-        </div>
-        <div class="project-card">
-            <h3>Web Project 2</h3>
-            <img src="project2-thumbnail.jpg" alt="Project 2" class="project-thumbnail">
-            <p>Description of Web Project 2.</p>
-        </div>
-    
+                <div class="project-card" data-title="Web Project 1" data-description="Description of Web Project 1.">
+                    <h3>Web Project 1</h3>
+                    <img src="project1-thumbnail.jpg" alt="Project 1" class="project-thumbnail">
+                    <p>Description of Web Project 1.</p>
+                </div>
+                <div class="project-card" data-title="Web Project 2" data-description="Description of Web Project 2.">
+                    <h3>Web Project 2</h3>
+                    <img src="project2-thumbnail.jpg" alt="Project 2" class="project-thumbnail">
+                    <p>Description of Web Project 2.</p>
+                </div>
             </div>
             <div id="portfolio-modal" class="modal">
-    <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <img id="modal-img" src="" alt="Portfolio Item" />
-        <div id="modal-description"></div>
-    </div>
-</div>
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <img id="modal-img" src="" alt="Portfolio Item" />
+                    <div id="modal-description"></div>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
@@ -82,37 +82,43 @@
                     <th colspan="2">Skills</th>
                 </tr>
                 <tr>
-                    <td>Programming Languages:</td>
-                    <td>JavaScript, Python, Java, Visual Basic, HTML, Snap, and Scratch</td>
+                    <td>Programming Languages</td>
+                    <td>Python, JavaScript, HTML, CSS</td>
                 </tr>
                 <tr>
-                    <td>Other Skills</td>
-                    <td>Problem Solving, Adaptability, Time management, Communication, Quick learner</td>
+                    <td>Frameworks</td>
+                    <td>React, Node.js, Django</td>
                 </tr>
             </table>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form id="contact-form" novalidate>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <span id="name-error" class="error-message"></span>
-
-        <input type="email" id="email" placeholder="Your Email" required>
-        <span id="email-error" class="error-message"></span>
-
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <span id="message-error" class="error-message"></span>
-
-        <button type="submit">Send Message</button>
-    </form>
+            <form id="contact-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                    <div id="name-error" class="error-message">Name is required.</div>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                    <div id="email-error" class="error-message">Valid email is required.</div>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div id="message-error" class="error-message">Message is required.</div>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Lailah Smith</p>
+        </footer>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Lailah Smith</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
