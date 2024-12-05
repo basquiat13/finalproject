@@ -50,6 +50,23 @@ nav a:hover {
     padding: 20px;
     margin-top: 60px; 
 }
+table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
 
 .highlight {
     color: #ff0000;
